@@ -96,7 +96,7 @@ export function GenieCodeChatInput({
   const showQueuedRow = inputState === 'agentActiveWithQueuedAndCells'
   const showActionButtons = inputState === 'cellsWithActions'
 
-  const placeholder = isAgentActive && inputState !== 'cellsWithActions' ? PLACEHOLDER_FOLLOW_UP : PLACEHOLDER_DEFAULT
+  const placeholder = isAgentActive ? PLACEHOLDER_FOLLOW_UP : PLACEHOLDER_DEFAULT
 
   const inputBorderWidth = rotatingBorder ? 2 : 1
   /** Purple for traveling glow – matches chat bubble tint */
